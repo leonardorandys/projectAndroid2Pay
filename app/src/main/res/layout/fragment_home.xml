@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".HomeFragment">
+
+<!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/txtPupuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="80dp"
+        android:textSize="60dp"
+        android:text="0.5" />
+    <TextView
+        android:id="@+id/txtInfoPupuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="75dp"
+        android:textSize="15dp"
+        android:text="Fertilizer Left" />
+
+    <TextView
+        android:id="@+id/txtAir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="230dp"
+        android:textSize="60dp"
+        android:text="2.5" />
+    <TextView
+        android:id="@+id/txtInfoAir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="240dp"
+        android:textSize="15dp"
+        android:text="Water Left" />
+
+    <Button
+        android:id="@+id/btnFertilize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/rounded_button"
+        android:text="Fertilize" />
+
+    <Button
+        android:id="@+id/btnWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/rounded_button"
+        android:text="Watering" />
+
+</FrameLayout>
