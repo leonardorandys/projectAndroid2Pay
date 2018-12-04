@@ -27,7 +27,8 @@ public class dboard extends AppCompatActivity {
         if( getIntent().getExtras() != null)
         {
             String username = getIntent().getStringExtra("username");
-            mUsername.setText("Hai, " + username);
+            String text = "Hai, " + username;
+            mUsername.setText(text);
         }
 
     }
