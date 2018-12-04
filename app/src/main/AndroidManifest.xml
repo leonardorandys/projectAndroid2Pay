@@ -26,11 +26,13 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".PreferenceManager" />
         <activity android:name=".SettingActivity" />
-        <activity android:name=".dboard"/>
+        <activity android:name=".dboard" />
         <activity android:name=".AccountActivity" />
         <activity android:name=".ShopActivity" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".DashboardActivity" />
+        <activity android:name=".AccountPayment" />
+        <activity android:name=".ShopPayment"></activity>
     </application>
 
 </manifest>
