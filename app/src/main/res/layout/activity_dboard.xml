@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.068" />
 
     <Button
-        android:id="@+id/btnedit"
+        android:id="@+id/btnEdit"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -49,10 +49,10 @@
         android:text="Fertilize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.908" />
+        app:layout_constraintVertical_bias="0.77" />
 
     <Button
         android:id="@+id/btnWatering"
@@ -66,10 +66,10 @@
         android:text="Watering"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintHorizontal_bias="0.903"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.908" />
+        app:layout_constraintVertical_bias="0.77" />
 
     <TextView
         android:id="@+id/txtUsername"
@@ -91,7 +91,7 @@
     <TextView
         android:id="@+id/txtAmount"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -105,7 +105,7 @@
         app:layout_constraintVertical_bias="0.314" />
 
     <TextView
-        android:id="@+id/txtUsername3"
+        android:id="@+id/txtFertilize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -113,16 +113,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="0.5 Kg"
-        android:textSize="30sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
+        app:layout_constraintVertical_bias="0.611" />
 
     <TextView
-        android:id="@+id/txtUsername4"
+        android:id="@+id/txtWatering"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -130,19 +130,27 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="2.5 L"
-        android:textSize="30sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
+        app:layout_constraintVertical_bias="0.611" />
 
     <Button
         android:id="@+id/btnShop"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/ic_shop"
-        tools:layout_editor_absoluteX="338dp"
-        tools:layout_editor_absoluteY="9dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015" />
 </android.support.constraint.ConstraintLayout>

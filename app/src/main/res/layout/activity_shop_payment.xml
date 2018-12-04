@@ -28,7 +28,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/btnP1"
         android:layout_width="300dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -36,15 +36,15 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/rounded_button"
-        android:text="Button"
+        android:text="Pupuk A1 10.000/Kg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintVertical_bias="0.016" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/btnP2"
         android:layout_width="300dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -52,15 +52,15 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/rounded_button"
-        android:text="Button"
+        android:text=" Pupuk B2 20.000/Kg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintVertical_bias="0.16" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/btnP3"
         android:layout_width="300dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -68,15 +68,15 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/rounded_button"
-        android:text="Button"
+        android:text=" Pupuk C3 30.000/Kg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.279" />
+        app:layout_constraintVertical_bias="0.309" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/btnP4"
         android:layout_width="300dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -84,10 +84,27 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/rounded_button"
-        android:text="Button"
+        android:text=" Pupuk C4 40.000/Kg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.41" />
+        app:layout_constraintVertical_bias="0.454" />
+
+    <Button
+        android:id="@+id/btnP5"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_button"
+        android:text="Pupuk C5 50.000/Kg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603" />
+
 </android.support.constraint.ConstraintLayout>
