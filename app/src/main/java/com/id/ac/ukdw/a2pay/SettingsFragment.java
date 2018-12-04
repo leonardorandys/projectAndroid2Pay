@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 
 /**
@@ -105,4 +106,7 @@ public class SettingsFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
-}
+
+    public void About(){
+        Toast.makeText(getActivity(),"ABOUT CLICKED",Toast.LENGTH_LONG).show();
+    }}
