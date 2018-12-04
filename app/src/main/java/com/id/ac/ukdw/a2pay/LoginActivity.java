@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 User user = documentSnapshot.toObject(User.class);
                 if(mPassword.getText().toString().equals(user.getPassword())){
-                    Toast.makeText(getApplicationContext(),"Welcome " + mUsername,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Welcome " + mUsername.getText().toString(),Toast.LENGTH_SHORT).show();
                     Intent iLogin = new Intent(LoginActivity.this, DashboardActivity.class);
                     startActivity(iLogin);
                 }
