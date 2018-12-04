@@ -32,7 +32,8 @@
         <activity android:name=".SettingActivity" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".AccountPayment" />
-        <activity android:name=".ShopPayment"></activity>
+        <activity android:name=".ShopPayment" />
+        <activity android:name=".EditProfilePayment"></activity>
     </application>
 
 </manifest>
