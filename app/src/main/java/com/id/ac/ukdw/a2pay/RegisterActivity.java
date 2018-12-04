@@ -15,16 +15,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -89,11 +81,6 @@ public class RegisterActivity extends AppCompatActivity {
         mPassword=findViewById(R.id.txtPassword);
         mRegister=findViewById(R.id.btnRegister);
         mUsername=findViewById(R.id.txtUsername);
-    }
-
-    private void startIntent(){
-        Intent intent=new Intent(getApplicationContext(),DashboardActivity.class);
-        startActivity(intent);
     }
 
     public static boolean isEmailValid(String email) {

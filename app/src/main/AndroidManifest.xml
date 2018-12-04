@@ -25,17 +25,12 @@
         <activity android:name=".SlideThree" />
         <activity android:name=".MainActivity" />
         <activity android:name=".PreferenceManager" />
-<<<<<<< HEAD
-        <activity android:name=".Account" />
-        <activity android:name=".Shop" />
         <activity android:name=".SettingActivity" />
-        <activity android:name=".dboard"></activity>
-=======
+        <activity android:name=".dboard"/>
         <activity android:name=".AccountActivity" />
         <activity android:name=".ShopActivity" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".DashboardActivity" />
->>>>>>> parent of 3729ae5... Revert "up up"
     </application>
 
 </manifest>
