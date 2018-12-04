@@ -4,29 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".DashboardActivity">
 
-    <FrameLayout
-        android:id="@+id/frame_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <Button
+        android:id="@+id/btnMonitor"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="176dp"
+        android:text="Monitor"
+        app:layout_constraintBottom_toTopOf="@+id/btnAccount"
+        app:layout_constraintEnd_toStartOf="@+id/btnShop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/btm_nav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="8dp"
-        app:itemBackground="@color/bg_slider_screen1"
-        app:itemIconTint="@drawable/state_list"
-        app:itemTextColor="@drawable/state_list"
+    <Button
+        android:id="@+id/btnShop"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginTop="176dp"
+        android:text="Shop"
+        app:layout_constraintBottom_toTopOf="@+id/btnSettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMonitor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAccount"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="189dp"
+        android:layout_marginStart="106dp"
+        android:text="Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSettings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMonitor" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="191dp"
+        android:layout_marginEnd="78dp"
+        android:text="Setting"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:menu="@menu/menu_bottom_nav_view" />
-
+        app:layout_constraintStart_toEndOf="@+id/btnAccount"
+        app:layout_constraintTop_toBottomOf="@+id/btnShop" />
 </android.support.constraint.ConstraintLayout>
