@@ -16,5 +16,11 @@ public class AccountActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
+
+        btnClose = findViewById(R.id.btnClose);
+        btnEditAcc = findViewById(R.id.btnEditAcc);
+        txtUsername = findViewById(R.id.txtUsername);
+        txtTelepon = findViewById(R.id.txtTelepon);
+        txtBalance = findViewById(R.id.txtBalance);
     }
 }
