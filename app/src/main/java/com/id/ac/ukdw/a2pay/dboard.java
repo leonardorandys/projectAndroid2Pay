@@ -67,6 +67,14 @@ public class dboard extends AppCompatActivity {
             }
         });
 
+        mShop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent iShop = new Intent(dboard.this, ShopPayment.class);
+                iShop.putExtra("user",u);
+                startActivity(iShop);
+            }
+        });
     }
 
     public void getDataUser(String username){

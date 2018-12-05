@@ -17,10 +17,12 @@ public class ShopPayment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop_payment);
 
-        mP1 = findViewById(R.id.btnP1);
-        mP2 = findViewById(R.id.btnP2);
-        mP3 = findViewById(R.id.btnP3);
-        mP4 = findViewById(R.id.btnP4);
+        mP1 = findViewById(R.id.btnPupuk1);
+        mP2 = findViewById(R.id.btnPupuk2);
+        mP3 = findViewById(R.id.btnPupuk3);
+        mP4 = findViewById(R.id.btnPupuk4);
+
+
 
     }
 }
