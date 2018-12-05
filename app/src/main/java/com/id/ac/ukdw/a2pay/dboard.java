@@ -1,6 +1,7 @@
 package com.id.ac.ukdw.a2pay;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,8 @@ public class dboard extends AppCompatActivity {
     private Button mEdit;
     private Button mShop;
     private Button mTopUp;
+    private Button mLogout;
+    private Button mRefresh;
     private TextView mUsername;
     private TextView mSaldo;
     private TextView mPassword;
@@ -38,6 +41,8 @@ public class dboard extends AppCompatActivity {
         mTopUp = findViewById(R.id.btnTopUp);
         mUsername = findViewById(R.id.txtUsername);
         mSaldo = findViewById(R.id.txtAmount);
+        mLogout = findViewById(R.id.btnLogOut);
+        mRefresh = findViewById(R.id.btnAccount);
 
         if( getIntent().getExtras() != null)
         {
@@ -75,6 +80,25 @@ public class dboard extends AppCompatActivity {
                 startActivity(iShop);
             }
         });
+
+        mLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iLogout = new Intent(dboard.this, MainActivity.class);
+                iLogout.putExtra("user", u);
+                startActivity(iLogout);
+            }
+        });
+
+        mRefresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iRefresh = new Intent(dboard.this, dboard.class);
+                iRefresh.putExtra("user", u);
+                startActivity(iRefresh);
+            }
+        });
+
     }
 
     public void getDataUser(String username){

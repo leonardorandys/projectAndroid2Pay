@@ -77,7 +77,7 @@ public class EditProfilePayment extends AppCompatActivity {
         {
             FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-            User u = new User(mNama.getText().toString(), mUsername.getText().toString(), mPassword.getText().toString(), mEmail.getText().toString(), mAlamat.getText().toString(), mNoHp.getText().toString(), 0);
+            User u = new User(mNama.getText().toString(), mUsername.getText().toString(), mPassword.getText().toString(), mEmail.getText().toString(), mAlamat.getText().toString(), mNoHp.getText().toString(), user.getSaldo());
 
             db.collection("users").document(u.getUsername()).set(u);
 
