@@ -33,7 +33,8 @@
         <activity android:name=".DashboardActivity" />
         <activity android:name=".AccountPayment" />
         <activity android:name=".ShopPayment" />
-        <activity android:name=".EditProfilePayment"></activity>
+        <activity android:name=".EditProfilePayment" />
+        <activity android:name=".TopupPayment"></activity>
     </application>
 
 </manifest>

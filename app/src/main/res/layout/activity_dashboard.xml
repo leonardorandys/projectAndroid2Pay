@@ -10,47 +10,55 @@
         android:id="@+id/btnMonitor"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginStart="106dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Monitor"
-        app:layout_constraintBottom_toTopOf="@+id/btnAccount"
-        app:layout_constraintEnd_toStartOf="@+id/btnShop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
 
     <Button
         android:id="@+id/btnShop"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginEnd="78dp"
-        android:layout_marginTop="176dp"
         android:text="Shop"
-        app:layout_constraintBottom_toTopOf="@+id/btnSettings"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnMonitor"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="31dp" />
 
     <Button
         android:id="@+id/btnAccount"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginBottom="189dp"
-        android:layout_marginStart="106dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Account"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnSettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMonitor" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
 
     <Button
         android:id="@+id/btnSettings"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginBottom="191dp"
-        android:layout_marginEnd="78dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Setting"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnAccount"
-        app:layout_constraintTop_toBottomOf="@+id/btnShop" />
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
 </android.support.constraint.ConstraintLayout>
