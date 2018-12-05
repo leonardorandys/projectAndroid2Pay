@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mUsername = findViewById(R.id.txtUsername);
         mPassword = findViewById(R.id.txtPassword);
-        mLogin = (Button) findViewById(R.id.btnLogin);
+        mLogin = findViewById(R.id.btnLogin);
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,9 +44,9 @@ public class LoginActivity extends AppCompatActivity {
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 User user = documentSnapshot.toObject(User.class);
                 if(mPassword.getText().toString().equals(user.getPassword())){
-                    Toast.makeText(getApplicationContext(),"Welcome " + mUsername.getText().toString(),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Welcome, " + user.getUsername(),Toast.LENGTH_SHORT).show();
                     Intent iLogin = new Intent(LoginActivity.this, dboard.class);
-                    iLogin.putExtra("username", user.getUsername());
+                    iLogin.putExtra("user", user);
                     startActivity(iLogin);
                 }
                 else{

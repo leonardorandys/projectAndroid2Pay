@@ -1,6 +1,8 @@
 package com.id.ac.ukdw.a2pay;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable{
 
     private String nama;
     private String username;
@@ -32,6 +34,10 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public String getAlamat() {

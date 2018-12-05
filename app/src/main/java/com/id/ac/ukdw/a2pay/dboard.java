@@ -1,9 +1,17 @@
 package com.id.ac.ukdw.a2pay;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class dboard extends AppCompatActivity {
 
@@ -12,6 +20,13 @@ public class dboard extends AppCompatActivity {
     private Button mShop;
     private TextView mUsername;
     private TextView mSaldo;
+    private TextView mPassword;
+    private TextView mAlamat;
+    private TextView mNama;
+    private TextView mNoHp;
+    private TextView mEmail;
+
+    private User u;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +41,46 @@ public class dboard extends AppCompatActivity {
 
         if( getIntent().getExtras() != null)
         {
-            String username = getIntent().getStringExtra("username");
-            String text = "Hai, " + username;
+            Intent i = getIntent();
+            u = (User)i.getSerializableExtra("user");
+            String text = "Welcome, " + u.getUsername();
             mUsername.setText(text);
+
+            getDataUser(u.getUsername());
         }
 
+        mEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent iEdit = new Intent(dboard.this, EditProfilePayment.class);
+//                iEdit.putExtra("nama", u.getNama());
+//                iEdit.putExtra("username", u.getUsername());
+//                iEdit.putExtra("password", u.getPassword());
+//                iEdit.putExtra("email", u.getEmail());
+//                iEdit.putExtra("alamat", u.getAlamat());
+//                iEdit.putExtra("noHp", u.getNoHp());
+                iEdit.putExtra("user",u);
+                startActivity(iEdit);
+            }
+        });
+
+
+    }
+
+    public void getDataUser(String username){
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        DocumentReference docRef = db.collection("users").document(username);
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                User user = documentSnapshot.toObject(User.class);
+
+                String text = "Amount : Rp " + user.getSaldo();
+                mSaldo.setText(text);
+
+                u = user;
+            }
+        });
     }
 }
