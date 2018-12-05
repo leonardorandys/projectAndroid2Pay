@@ -67,6 +67,10 @@ public class RegisterActivity extends AppCompatActivity {
 
             db.collection("users").document(u.getUsername()).set(u);
 
+            Index idx = new Index(mUsername.getText().toString(), mNoHp.getText().toString());
+
+            db.collection("index").document(mNoHp.getText().toString()).set(idx);
+
             Toast.makeText(getApplicationContext(),"Register successfully",Toast.LENGTH_SHORT).show();
             Intent iRegister = new Intent(RegisterActivity.this, LoginActivity.class);
             startActivity(iRegister);

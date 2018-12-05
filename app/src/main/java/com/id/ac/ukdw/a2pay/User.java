@@ -51,4 +51,8 @@ public class User implements Serializable{
     public int getSaldo() {
         return saldo;
     }
+
+    public void setSaldo(int newSaldo) {
+        this.saldo += newSaldo;
+    }
 }

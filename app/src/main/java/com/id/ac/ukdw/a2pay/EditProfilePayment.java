@@ -50,13 +50,6 @@ public class EditProfilePayment extends AppCompatActivity {
             mEmail.setText(user.getEmail());
             mAlamat.setText(user.getAlamat());
             mNoHp.setText(user.getNoHp());
-//            mNama.setText(getIntent().getStringExtra("nama"));
-//            mUsername.setText(getIntent().getStringExtra("username"));
-//            mPassword.setText(getIntent().getStringExtra("password"));
-//            mEmail.setText(getIntent().getStringExtra("email"));
-//            mNoHp.setText(getIntent().getStringExtra("noHp"));
-//            mAlamat.setText(getIntent().getStringExtra("alamat"));
-
         }
 
         mChange.setOnClickListener(new View.OnClickListener() {

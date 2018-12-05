@@ -15,9 +15,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class dboard extends AppCompatActivity {
 
-    private Button mAccount;
     private Button mEdit;
     private Button mShop;
+    private Button mTopUp;
     private TextView mUsername;
     private TextView mSaldo;
     private TextView mPassword;
@@ -33,9 +33,9 @@ public class dboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dboard);
 
-        mAccount = findViewById(R.id.btnAccount);
         mEdit = findViewById(R.id.btnEdit);
         mShop = findViewById(R.id.btnShop);
+        mTopUp = findViewById(R.id.btnTopUp);
         mUsername = findViewById(R.id.txtUsername);
         mSaldo = findViewById(R.id.txtAmount);
 
@@ -53,17 +53,19 @@ public class dboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent iEdit = new Intent(dboard.this, EditProfilePayment.class);
-//                iEdit.putExtra("nama", u.getNama());
-//                iEdit.putExtra("username", u.getUsername());
-//                iEdit.putExtra("password", u.getPassword());
-//                iEdit.putExtra("email", u.getEmail());
-//                iEdit.putExtra("alamat", u.getAlamat());
-//                iEdit.putExtra("noHp", u.getNoHp());
                 iEdit.putExtra("user",u);
                 startActivity(iEdit);
             }
         });
 
+        mTopUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent iTopUp = new Intent(dboard.this, TopupPayment.class);
+                iTopUp.putExtra("user",u);
+                startActivity(iTopUp);
+            }
+        });
 
     }
 
